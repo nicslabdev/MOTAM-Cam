@@ -9,6 +9,7 @@ The gateway implements a bluetooth serial server that allows any authorizated ca
 It is the manager of the important backup files or data and it controls the state of the whole system, determinating wheter it stoping or resuming if it necessary depending of the situation requeriments.
 
   -*BLE_test.py*: This code is the implementation of the bluetooth server, that **is not** a bluetooth low energy server. It makes posible the data transmision between both Raspberries and make a secure backup of the files that the camera send to it.
+  
   -*Throw_out.sh*: This is a bash code that exclude an current client of the pair list of the gateway. Thats disallow  comunications between this interfaces and it is call when a camera that have not authorization to pair with the gateway try to force the pairment. It is not blocking for futures pairements between they, but it prevend transacions of corrupt or forbiden data to the gateway or from it. 
   
 # Camera Client #
