@@ -8,3 +8,8 @@ The gateway implements a bluetooth serial server that allows any authorizated ca
 
 It is the manager of the important backup files or data and it controls the state of the whole system, determinating wheter it stoping or resuming if it necessary depending of the situation requeriments.
 
+# Camera Client #
+
+Camera client generates a bluetooth link between two interfaces (in this case two RaspberriesPi 3B) by a *pairing_process* that idetificates the cam into the gateway and also certificates the transmision by cryptography codes, so this link is a strong serial port by where the transmision protocol implemented too can transfer files or data from the cam to the gateway and by where the gateway can answerthe cam for the transmited packets it received.
+
+In this files there are the implementation of the necesary resources for the recognition, tracking and face-machine learnig and also the states-machine that cominicates with the gateway to keep it informated about all the events that have been produce.
