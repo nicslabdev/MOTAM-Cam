@@ -19,4 +19,5 @@ Camera client generates a bluetooth link between two interfaces (in this case tw
 In this files there are the implementation of the necesary resources for the recognition, tracking and face-machine learnig and also the states-machine that cominicates with the gateway to keep it informated about all the events that have been produce.
 
   -*Camera_software.py*: About that file, here it is the sofware that implements the client socket for bluetooth serial, the recognition system and the state-machine, also it calls the pairing_process explained below this lines to make a pairement with the gateway after read a QR code that gives it the necessary information for a secure encrypted pairement.
+  
   -*Pairing_process.sh*: A bash code that iniciates the pairement process from the cam to the gateway. He makes the necessary changes into the bluetooth adapter to allows the software make a pairement petition to the gateway which can be accepted or denied by the gateway dependig of the confidence that the cam put into the secure transport layer what is the unique information that the gateway will receive to confirm or not the pairement.
